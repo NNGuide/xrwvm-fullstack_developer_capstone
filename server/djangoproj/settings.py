@@ -29,8 +29,8 @@ SECRET_KEY =\
 DEBUG = True
 
 ALLOWED_HOSTS = ['localhost', 
-                 f"https://nxn210024-8000.theiadockernext-0-labs-prod-
-                 theiak8s-4-tor01.proxy.cognitiveclass.ai"]
+                 f'https://nxn210024-8000.theiadockernext-0-labs-prod- '
+                 f'theiak8s-4-tor01.proxy.cognitiveclass.ai']
 CSRF_TRUSTED_ORIGINS = [f"https://nxn210024-8000.theiadockernext-0-labs-prod-
                         theiak8s-4-tor01.proxy.cognitiveclass.ai"]
 
