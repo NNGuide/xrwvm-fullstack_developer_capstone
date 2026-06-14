@@ -15,7 +15,7 @@ sentiment_analyzer_url = os.getenv(
 # Add code for get requests to back end
 def get_request(endpoint, **kwargs):
     params = ""
-    if(kwargs):
+    if (kwargs):
         for key, value in kwargs.items():
             params = params + key + "=" + value + "&"
 
@@ -27,7 +27,7 @@ def get_request(endpoint, **kwargs):
         response = requests.get(request_url)
         return response.json()
     except Exception as e:
-	    print(f"Error: {e}")
+        print(f"Error: {e}")
 
 
 # Add code for retrieving sentiments
@@ -50,4 +50,4 @@ def post_review(data_dict):
         print(response.json())
         return response.json()
     except Exception as e:
-	    print(f"Error: {e}")
+        print(f"Error: {e}")
